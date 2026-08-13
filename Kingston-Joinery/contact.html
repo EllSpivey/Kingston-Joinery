@@ -1,0 +1,106 @@
+<!--Uncle D's WebPage
+NAME: Elliott Spivey
+DATE: 8/10/2026-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kingston Joinery :: Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="kingston.css">
+</head>
+<body>
+
+<div id="wrapper">
+
+<!--add link to the header-->
+<!--add a class to the header element-->
+<header class="content">
+    <h1><a href="index.html">Kingston Joinery Workshop and Working Museum for Furniture</a></h1>
+</header>
+
+<!--create a list out of the nav elements-->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="picture.html">Picture Collection</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<h2>Contact Kingston Joinery</h2>
+
+<p>
+We welcome questions about our handmade furniture, traditional woodworking demonstrations,
+and walk‑in visits. Whether you're interested in early American craftsmanship or simply want
+to learn more about our workshop, we’re happy to help.
+</p>
+
+<h3>How We Can Help</h3>
+<ul>
+    <li>Information about our handmade furniture</li>
+    <li>Scheduling visits or demonstrations</li>
+    <li>Historical questions about 1760–1860 woodworking</li>
+    <li>Community events and educational programs</li>
+</ul>
+
+<p>
+Fill out the form below and we’ll get back to you as soon as possible.
+All information is required.
+</p>
+
+<!--Create a form for the user to fill out-->
+<!--Need to change the action-->
+<form action="https://formspree.io/f/xpparvya" method="POST">
+
+        
+        <!--add label and input for name-->
+        <label for="myName">Name:</label>
+        <input type="text" name="myName" id="myName" required>
+
+        <!--add label and input for email-->
+        <label for="myEmail">E-mail:</label>
+        <input type="email" name="myEmail" id="myEmail" required>
+
+        <!-- add label and input for refferal-->
+        <label for="myRefer">How did you hear about us?</label>
+        <input list="referral" name="myRefer" id="myRefer" required>
+        <datalist id="referral">
+            <option value="Google">
+            <option value="Bing">
+            <option value="Facebook">
+            <option value="Friend">
+            <option value="Radio Ad">
+            <option value="Local Event">
+            <option value="Walk-In">
+            <option value="Other">
+        </datalist>
+        
+        <!--add label and comment section-->
+        <label for="myComments">Comments:</label>
+        <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+
+        <!--add a submit button-->
+        <input type="submit" value="Send Now" id="mySubmit">
+</form>
+
+<h3>Visit Us</h3>
+<p>
+Kingston Joinery is open for walk‑ins during regular business hours.
+Stop by to see traditional woodworking in action and learn how furniture was made
+between 1760 and the 1860s. We enjoy sharing our craft with the community.
+</p>
+
+</main>
+
+<footer>
+    Copyright &copy; 2026 Kingston Joinery<br> 
+    <a href="mailto:kingstonjoineryservices@gmail.com">kingstonjoineryservices@gmail.com</a>
+</footer>
+
+</div>
+</body>
+</html>

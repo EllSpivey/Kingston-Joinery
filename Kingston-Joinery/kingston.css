@@ -1,0 +1,314 @@
+/* ===========================
+   GLOBAL SITE STYLES
+   =========================== */
+
+body {
+    background-color: #322418;
+    color: #FFFBCC;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: #AF6E4D;
+    padding: 2em;
+    max-width: 100%;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
+header {
+    background-image: url("photo0.2.jpg");
+    background-size: 100% 150%;
+    background-color: #592720;
+    color: #F4E6C2;
+    font-size: 90%;
+    margin-top: 50px;
+    min-height: 200px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link,
+header a:visited {
+    color: brown;
+}
+
+header a:hover {
+    color: #EDF5F5;
+}
+
+/* ===========================
+   NAVIGATION
+   =========================== */
+
+nav {
+    width: 100%;
+    padding-top: .5em;
+    padding-right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: right;
+    background-color: saddlebrown;
+    margin: 0;
+    z-index: 9999;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+nav li {
+    width: 40%;
+    padding: 0 1em;
+    display: inline;
+}
+
+nav a:link,
+nav a:visited {
+    color: #3F2860;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* ===========================
+   GENERAL CONTENT
+   =========================== */
+
+.home, .content {
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+
+section {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+/* ===========================
+   TABLE STYLES
+   =========================== */
+
+table {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    border: 1px solid #3F2860;
+    border-collapse: collapse;
+	background-color: #8C4A2F;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #3F2860;
+}
+
+tr:nth-of-type(even) {
+    background-color: saddlebrown;
+}
+
+caption {
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+/* ===========================
+   FORM STYLES
+   =========================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+
+input, textarea {
+    margin-bottom: .5em;
+}
+
+/* ===========================
+   AUDIO
+   =========================== */
+
+audio {
+    display: block;
+    margin: 1em;
+}
+
+/* ===========================
+   GALLERY STYLES (NEW)
+   =========================== */
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    gap: 2em;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Dual-column thumbnails */
+#gallery ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    flex-basis: 300px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+/* Thumbnail images ONLY */
+#gallery img.thumb {
+    width: 150px;
+    height: auto;
+    border: 2px solid #7A4F2A; /* Chestnut border */
+    cursor: pointer;
+    background-color: #3A2F2A; /* Iron frame */
+    padding: 4px;
+}
+
+/* Preview area */
+figure {
+    flex: 1;
+	min-width: 400px;
+    text-align: center;
+    background-color: #3A2F2A; /* Iron */
+    padding: 1em;
+    border: 2px solid #7A4F2A; /* Chestnut */
+}
+
+/* Full-size preview image */
+figure img {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #8C4A2F; /* Mahogany */
+}
+
+/* ===========================
+   RESPONSIVE GALLERY
+   =========================== */
+
+@media (max-width: 700px) {
+    #gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gallery ul {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        justify-items: center;
+    }
+
+	figure {
+		width: 100%;
+		padding: .5em;
+	}
+	
+    figure img {
+        max-width: 100%;
+    }
+}
+
+/* ===========================
+   MEDIUM SCREEN
+   =========================== */
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+    nav li {
+        width: 7em;
+    }
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    form {
+        width: 60%;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 12em 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 2;
+        width: 9em;
+        background-color: #7A4F2A; /* Chestnut */
+        color: #F4E6C2; /* Parchment */
+        border: 1px solid #C97A40; /* Copper */
+    }
+
+    label {
+        text-align: right;
+    }
+}
+
+/* ===========================
+   LARGE SCREEN
+   =========================== */
+
+@media (min-width: 1024px) {
+    header {
+        font-size: 120%;
+    }
+    .home {
+        height: 50vh;
+        padding-top: 5em;
+        padding-left: 8em;
+    }
+    .content {
+        height: 30vh;
+        padding-top: 1em;
+        padding-left: 8em;
+    }
+    #wrapper {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+    font-size: 0.60em;
+    font-style: italic;
+    text-align: center;
+	color: #F4E6C2; /* Parchment */
+}
