@@ -87,7 +87,7 @@ nav li {
 nav li::before {
     content: "•";            /* adds the dot */
     margin-left: 0.10em;        /* adds spaceing to the dot */
-    color: #654321;          /* dot color */
+    color: #A52A2A;          /* dot color */
     font-weight: 900;        /* adds bold dot */
 }
 
@@ -99,7 +99,7 @@ nav li:last-child::after {
 
 nav a:link,
 nav a:visited {
-    color: #A52A2A;
+    color: #654321;
 }
 
 nav a:hover {
