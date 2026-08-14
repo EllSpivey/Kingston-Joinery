@@ -163,6 +163,11 @@ caption {
     text-align: center;
 }
 
+.contact-box p {
+    text-align: center;
+    margin: .5em 0;
+}
+
 .contact-box a {
     color: #592720;
     font-weight: bold;
