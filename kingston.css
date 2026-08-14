@@ -153,6 +153,31 @@ caption {
 /* ===========================
    FORM STYLES
    =========================== */
+.contact-box {
+    background-color: #FFF8CC; /* parchment tone */
+    padding: 1em;
+    border: 2px solid #592720; /* deep wood tone */
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 1.5em auto;
+    text-align: center;
+}
+
+.contact-box a {
+    color: #592720;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    color: #AF6E4D;
+}
+
+.contact-note {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
 
 form {
     display: flex;
