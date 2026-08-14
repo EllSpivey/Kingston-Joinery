@@ -20,13 +20,15 @@ body {
    =========================== */
 
 header {
-    background-image: url("photo0.2.jpg");
-    background-size: 100% 150%;
+    background-image: url("TheJoinery.jpeg");
+    background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
     background-color: #592720;
     color: #F4E6C2;
     font-size: 90%;
     margin-top: 50px;
-    min-height: 200px;
+    min-height: 500px;
     padding-left: 0;
     padding-right: 0;
 }
