@@ -93,6 +93,13 @@ nav a:hover {
 /* ===========================
    GENERAL CONTENT
    =========================== */
+.center {
+	font-weight: 900;
+	font-size: 1.5em;
+	text-align: center;
+	display: block;
+	margin-top: 1em;
+
 .notice {
 	font-weight: 900; /* addsextra bold */
 	font-size: 1.2em; /* larger font size */
