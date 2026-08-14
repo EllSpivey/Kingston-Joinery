@@ -99,7 +99,7 @@ nav li:last-child::after {
 
 nav a:link,
 nav a:visited {
-    color: #3F2860;
+    color: #FFBF00;
 }
 
 nav a:hover {
