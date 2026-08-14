@@ -317,10 +317,10 @@ figure img {
 @media (min-width: 600px) {
     nav ul {
         flex-wrap: nowrap;
-        justify-content: flex-end;
+        justify-content: center;
     }
     nav li {
-        width: 7em;
+        width: auto;
     }
     section {
         padding-left: 2em;
