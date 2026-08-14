@@ -116,6 +116,10 @@ nav a:hover {
     width: 100%;
 }
 
+body.contact-page .content {
+	padding-left: 0;
+}
+
 .home, .content {
     height: 20vh;
     padding-top: 2em;
