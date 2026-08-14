@@ -86,7 +86,7 @@ nav li {
 /* Adds dots between each nav link */
 nav li::after {
     content: "•";            /* adds the dot */
-    margin-left: 1em;        /* adds spaceing to the dot */
+    margin-left: 0.5em;        /* adds spaceing to the dot */
     color: #FFD27F;          /* dot color */
     font-weight: 900;        /* adds bold dot */
 }
