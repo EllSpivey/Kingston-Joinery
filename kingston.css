@@ -23,13 +23,15 @@ header {
     background-image: url("TheJoinery.jpeg");
     background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left center;
     background-color: #592720;
     color: #F4E6C2;
     font-size: 90%;
     margin-top: 50px;
     min-height: 500px;
-    padding-left: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
     padding-right: 0;
 }
 
@@ -148,10 +150,6 @@ body.contact-page main {
     height: 20vh;
     padding-top: 2em;
     padding-left: 0;
-}
-
-.backimg {
-	justify-content: left;
 }
 
 section {
