@@ -87,7 +87,7 @@ nav li {
 nav li::before {
     content: "•";            /* adds the dot */
     margin-left: 0.10em;        /* adds spaceing to the dot */
-    color: #FFD27F;          /* dot color */
+    color: #654321;          /* dot color */
     font-weight: 900;        /* adds bold dot */
 }
 
