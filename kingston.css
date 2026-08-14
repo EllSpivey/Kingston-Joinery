@@ -155,10 +155,10 @@ caption {
    =========================== */
 .contact-box {
     background-color: #FFF8CC; /* parchment tone */
-    padding: 1em;
+    padding: 1.5em;
     border: 2px solid #592720; /* deep wood tone */
     border-radius: 8px;
-    max-width: 400px;
+    max-width: 300px;
     margin: 1.5em auto;
     text-align: center;
 }
