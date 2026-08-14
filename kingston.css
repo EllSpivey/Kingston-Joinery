@@ -150,6 +150,10 @@ body.contact-page main {
     padding-left: 0;
 }
 
+.backimg {
+	justify-content: left;
+}
+
 section {
     padding-left: .5em;
     padding-right: .5em;
