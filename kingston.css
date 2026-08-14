@@ -135,9 +135,9 @@ nav a:hover {
 }
 
 .header-text {
-	text-align: right;
+	text-align: center;
 	max-width: 40%;
-	margin-left:40%
+	margin-left: 80%
 }
 
 body.contact-page .content {
