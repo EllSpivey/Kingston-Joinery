@@ -131,7 +131,7 @@ body.contact-page main {
 .home, .content {
     height: 20vh;
     padding-top: 2em;
-    padding-left: 10%;
+    padding-left: 0;
 }
 
 section {
