@@ -110,6 +110,12 @@ nav a:hover {
 	color: #000000;
 }
 
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .home, .content {
     height: 20vh;
     padding-top: 2em;
