@@ -86,17 +86,7 @@ nav li {
 }
 
 /* Adds dots between each nav link */
-nav li::before {
-    content: "";
-    display: inline-block;
-    width: 10px;          /* adjust size */
-    height: 10px;         /* adjust size */
-    background-image: url("chisle.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 0.25em;  /* spacing between image and text */
-    vertical-align: middle;
-}
+
 
 
 /* Remove dot after the last item */
