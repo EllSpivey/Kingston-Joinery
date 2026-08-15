@@ -95,7 +95,7 @@ nav li::before {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 0.3em;
-    vertical-align: middle;
+    vertical-align: -4px;
 }
 
 /* Remove dot after the last item */
