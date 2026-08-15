@@ -20,29 +20,36 @@ body {
    =========================== */
 
 header {
-    background-image: url("TheJoinery.jpeg");
-    background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left center;
     background-color: #592720;
     color: #F4E6C2;
     font-size: 90%;
     margin-top: 50px;
     min-height: 500px;
+	
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
     padding: 0 3em;
+	position: relative;
 }
 
 header a {
     text-decoration: none;
 }
 
-header a:link,
-header a:visited {
-    color: brown;
+/* ===========================
+   Recently Added to Fix the Images Reponse on Different Screens
+   =========================== */
+header::before {
+	content: "";
+	flex: 0 0 400px; /*spacing for img*/
+	height: 100%;
+	background-image: url("TheJoinery.jpeg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
 }
+/* ============================ */
 
 header a:hover {
     color: #EDF5F5;
@@ -99,12 +106,6 @@ nav li::before {
     margin-right: 0.1em;
 }
 
-/* Remove dot after the last item */
-nav li:last-child::after {
-    content: "";
-}
-
-
 nav a:link,
 nav a:visited {
     color: #654321;
@@ -126,7 +127,7 @@ nav a:hover {
 }
 
 .notice {
-	font-weight: 900; /* addsextra bold */
+	font-weight: 900; /* adds extra bold */
 	font-size: 1.2em; /* larger font size */
 	text-align: center; /* centers the text */
 	display: block; /* allows centering */
@@ -141,9 +142,9 @@ nav a:hover {
 }
 
 .header-text {
-	text-align: center;
 	max-width: 40%;
-	margin-left: 50%
+	margin-left: 2em;
+	text-align: center;
 }
 
 body.contact-page .content {
@@ -249,16 +250,7 @@ input, textarea {
 }
 
 /* ===========================
-   AUDIO
-   =========================== */
-
-audio {
-    display: block;
-    margin: 1em;
-}
-
-/* ===========================
-   GALLERY STYLES (NEW)
+   GALLERY STYLES
    =========================== */
 
 #gallery {
@@ -280,9 +272,6 @@ audio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
-    flex-basis: 300px;
-	flex-grow: 0;
-	flex-shrink: 0;
 }
 
 /* Thumbnail images ONLY */
@@ -298,7 +287,6 @@ audio {
 /* Preview area */
 figure {
     flex: 1;
-	min-width: 400px;
     text-align: center;
     background-color: #3A2F2A; /* Iron */
     padding: 1em;
@@ -318,30 +306,17 @@ figure img {
    RESPONSIVE GALLERY
    =========================== */
 
-@media (max-width: 700px) {
-    #gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #gallery ul {
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        justify-items: center;
-    }
-
-	figure {
-		width: 100%;
-		padding: .5em;
+/* ===========================
+   VERY SMALL SCREENS
+   =========================== */
+@media (max-width: 450px) {
+	#gallery ul {
+		grid-template-columns: 1fr;
 	}
-	
-    figure img {
-        max-width: 100%;
-    }
 }
 
 /* ===========================
-   MEDIUM SCREEN
+   SMALL SCREEN
    =========================== */
 
 @media (min-width: 600px) {
@@ -375,6 +350,76 @@ figure img {
     label {
         text-align: right;
     }
+}
+
+/* ===========================
+   SMALL - MEDIUM SCREEN
+   =========================== */
+@media (max-width: 700px) {
+    #gallery {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+		padding: 0.5em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #gallery ul {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0 auto;
+        justify-items: center;
+		display: grid;
+    }
+
+    figure {
+        flex: none;
+        width: 100%;
+        min-width: 0;
+		max-width: 100%;
+		box-sizing: border-box;
+        padding: .5em;
+		margin: 0 auto;
+		order: -1;
+    }
+
+    figure img {
+		width: 100%;
+        max-width: 100%;
+        height: auto;
+		order: 0;
+    }
+}
+
+/* ===========================
+   MEDIUM - LARGE SCREEN
+   =========================== */
+@media (max-width: 900px) {
+	header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 2em 1em;
+	}
+	
+	header::before {
+		flex: 0 0 auto;
+		width: 100%;
+		height: 250px;
+		background-size: contain;
+		background-position: center;
+		margin-bottom: 1em;
+	}
+	
+	.header-text {
+		max-width: 90%;
+		margin-left: 0;
+	}
 }
 
 /* ===========================
