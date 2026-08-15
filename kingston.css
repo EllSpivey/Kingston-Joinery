@@ -89,7 +89,7 @@ nav li {
 nav li::before {
     content: "";
 	position: relative;
-	top: 10px; /* Higher = lower */
+	top: 30px; /* Higher = lower */
     display: inline-block;
     width: 40px;
     height: 40px;
