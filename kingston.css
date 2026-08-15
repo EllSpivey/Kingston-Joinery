@@ -88,6 +88,8 @@ nav li {
 /* Adds dots between each nav link */
 nav li::before {
     content: "";
+	position: relative;
+	top: 4px; /* Higher = lower */
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -95,7 +97,6 @@ nav li::before {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 0.3em;
-    vertical-align: -4px;
 }
 
 /* Remove dot after the last item */
