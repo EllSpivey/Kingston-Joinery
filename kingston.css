@@ -91,7 +91,7 @@ nav li::before {
     display: inline-block;
     width: 14px;
     height: 14px;
-    background-image: url("chisle.png");
+    background-image: url("chisel.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 0.3em;
