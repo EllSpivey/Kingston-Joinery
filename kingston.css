@@ -20,7 +20,7 @@ body {
    =========================== */
 
 header {
-    background-image: url("TheJoinery.png");
+    background-image: url("TheJoinery.jpeg");
     background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -86,8 +86,17 @@ nav li {
 }
 
 /* Adds dots between each nav link */
-
-
+nav li::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url("chisle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.3em;
+    vertical-align: middle;
+}
 
 /* Remove dot after the last item */
 nav li:last-child::after {
