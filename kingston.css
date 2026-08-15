@@ -89,14 +89,14 @@ nav li {
 nav li::before {
     content: "";
 	position: relative;
-	top: 48px; /* Higher = lower */
+	top: 45px; /* Higher = lower */
     display: inline-block;
     width: 60px;
     height: 60px;
     background-image: url("chisel.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 0.3em;
+    margin-right: 0.1em;
 }
 
 /* Remove dot after the last item */
