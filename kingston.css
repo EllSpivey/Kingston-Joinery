@@ -89,12 +89,12 @@ nav li {
 nav li::before {
     content: "";
     display: inline-block;
-    width: 14px;          /* adjust size */
-    height: 14px;         /* adjust size */
+    width: 10px;          /* adjust size */
+    height: 10px;         /* adjust size */
     background-image: url("chisle.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 0.3em;  /* spacing between image and text */
+    margin-right: 0.25em;  /* spacing between image and text */
     vertical-align: middle;
 }
 
