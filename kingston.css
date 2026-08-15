@@ -307,6 +307,24 @@ figure img {
    =========================== */
 
 /* ===========================
+   ULTRA SMALL SCREEN (Recently added)
+   =========================== */
+@media (max-width: 380px) {
+    #gallery ul {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #gallery img.thumb {
+        width: 120px; /* optional - smaller thumbnails */
+    }
+
+    figure {
+        padding: .25em; /* optional - tighter spacing */
+    }
+}
+
+/* ===========================
    VERY SMALL SCREENS
    =========================== */
 @media (max-width: 450px) {
