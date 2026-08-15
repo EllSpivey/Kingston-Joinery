@@ -87,11 +87,17 @@ nav li {
 
 /* Adds dots between each nav link */
 nav li::before {
-    content: "chisle.png";            /* adds the dot */
-    margin-left: 0.10em;        /* adds spaceing to the dot */
-    color: #A52A2A;          /* dot color */
-    font-weight: 900;        /* adds bold dot */
+    content: "";
+    display: inline-block;
+    width: 14px;          /* adjust size */
+    height: 14px;         /* adjust size */
+    background-image: url("chisle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.3em;  /* spacing between image and text */
+    vertical-align: middle;
 }
+
 
 /* Remove dot after the last item */
 nav li:last-child::after {
