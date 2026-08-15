@@ -89,8 +89,8 @@ nav li {
 nav li::before {
     content: "";
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     background-image: url("chisel.png");
     background-size: contain;
     background-repeat: no-repeat;
