@@ -96,10 +96,10 @@ nav li {
 nav li::before {
     content: "";
 	position: relative;
-	top: 45px; /* Higher = lower */
+	top: 25px; /* Higher = lower */
     display: inline-block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background-image: url("chisel.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -356,6 +356,20 @@ figure img {
    SMALL - MEDIUM SCREEN
    =========================== */
 @media (max-width: 700px) {
+	header {
+		padding-top: 5.5em;
+	}
+
+	nav li::before {
+		width: 30px;
+		height: 30px;
+		top: 15px;
+	}
+	
+		nav {
+		padding-top: .25em;
+	}
+	
     #gallery {
         flex-direction: column;
         align-items: center;
